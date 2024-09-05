@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #3498db;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out forwards;
+}
+
+header h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.text {
+    text-transform: uppercase;
+}
+
+/* Dividers */
+hr {
+    border: 0;
+    height: 2px;
+    background: #e74c3c;
+    margin-bottom: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: growLine 1s ease-in-out;
+}
+
+/* Professional Objective */
+div p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #34495e;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+table td {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+table td h3 {
+    font-size: 1.2em;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+ul li {
+    padding: 8px;
+    list-style-type: "✓";
+    color: #27ae60;
+    font-size: 1.1em;
+}
+
+dl dt {
+    font-weight: bold;
+    color: #34495e;
+}
+
+dl dd {
+    margin-left: 20px;
+    font-size: 1.1em;
+    padding: 4px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes growLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+/* Button Hover Effect */
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Extra Styles */
+p, ul li, dl dd {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    table th, table td {
+        font-size: 1em;
+    }
+}
